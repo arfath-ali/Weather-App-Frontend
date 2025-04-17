@@ -31,7 +31,7 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-      'prettier/prettier': 'warn',
+      'prettier/prettier': '0',
     },
   },
 ];
