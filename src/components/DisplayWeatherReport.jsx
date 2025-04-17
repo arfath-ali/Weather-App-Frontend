@@ -25,7 +25,7 @@ const DisplayWeatherReport = ({ WeatherReport }) => {
       <div className='text-lg mt-4 flex flex-col gap-4 mx-4'>
         <div className="flex items-center gap-3">
           <img
-            src="src/assets/images/icons/temparature.png"
+            src="src/assets/images/icons/temperature.png"
             className="h-6 w-6"
             alt="Temparature-Icon"
           />
