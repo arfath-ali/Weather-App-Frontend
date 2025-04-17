@@ -10,7 +10,7 @@ const DisplayWeatherReport = ({ WeatherReport }) => {
   const icon = WeatherReport?.weather[0]?.icon;
   return (
     <div className='flex flex-col items-center'>
-      <div className="ml-4 text-center">
+      <div className="text-center">
         <h1 className="text-4xl">
           {WeatherReport?.name}, {WeatherReport?.sys?.country}
         </h1>
@@ -18,16 +18,16 @@ const DisplayWeatherReport = ({ WeatherReport }) => {
         <h2 className="mt-2 text-xl">{convertUnixToDate(WeatherReport?.dt)}</h2>
       </div>
 
-      <div className="flex items-center justify-center gap-4 mt-8">
+      <div className="flex items-center mt-8">
         <img
           src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
           alt="Weather-Icon"
-          className="h-48 w-48"
+          className="h-38 w-38"
         />
-        <p className="text-3xl">{WeatherReport?.weather[0]?.description}</p>
+        <p className="text-3xl flex-wrap">{WeatherReport?.weather[0]?.description}</p>
       </div>
 
-      <div className='text-lg mt-4 flex flex-col gap-4 mx-4'>
+      <div className='text-lg mt-4 flex flex-col gap-4'>
         <div className="flex items-center gap-3">
           <img
             src={temperatureIcon}
