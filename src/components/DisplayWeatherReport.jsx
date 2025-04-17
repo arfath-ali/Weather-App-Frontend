@@ -1,5 +1,10 @@
 import convertUnixToDate from '../utilities/convertUnixToData';
 import convertUnixToTime from '../utilities/convertUnixToTime ';
+import temperatureIcon from '../assets/images/icons/temperature.png';
+import humidityIcon from '../assets/images/icons/humidity.png';
+import sunriseIcon from '../assets/images/icons/sunrise.png';
+import sunsetIcon from '../assets/images/icons/sunset.png';
+
 
 const DisplayWeatherReport = ({ WeatherReport }) => {
   const icon = WeatherReport?.weather[0]?.icon;
@@ -25,7 +30,7 @@ const DisplayWeatherReport = ({ WeatherReport }) => {
       <div className='text-lg mt-4 flex flex-col gap-4 mx-4'>
         <div className="flex items-center gap-3">
           <img
-            src="src/assets/images/icons/temperature.png"
+            src={temperatureIcon}
             className="h-6 w-6"
             alt="Temparature-Icon"
           />
@@ -34,7 +39,7 @@ const DisplayWeatherReport = ({ WeatherReport }) => {
 
         <div className="flex items-center gap-3">
           <img
-            src="src/assets/images/icons/humidity.png"
+            src={humidityIcon}
             className="h-6 w-6"
             alt="Humidity-Icon"
           />
@@ -43,7 +48,7 @@ const DisplayWeatherReport = ({ WeatherReport }) => {
 
         <div className="flex items-center gap-3">
           <img
-            src="src/assets/images/icons/sunrise.png"
+            src={sunriseIcon}
             className="h-6 w-6"
             alt="Sunrise-Icon"
           />
@@ -52,7 +57,7 @@ const DisplayWeatherReport = ({ WeatherReport }) => {
 
         <div className="flex items-center gap-3">
           <img
-            src="src/assets/images/icons/sunset.png"
+            src={sunsetIcon}
             className="h-6 w-6"
             alt="Sunset-Icon"
           />
